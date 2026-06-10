@@ -1,6 +1,7 @@
 import { createFileRoute } from "@tanstack/react-router";
 import { ArrowRight, MapPin, Phone, Stethoscope, HeartPulse, Activity } from "lucide-react";
-import drBruno from "@/assets/dr-bruno-sessa.jpg";
+import drBrunoAsset from "@/assets/dr-bruno-sessa.jpg.asset.json";
+const drBruno = drBrunoAsset.url;
 
 export const Route = createFileRoute("/")({
   head: () => ({
@@ -27,13 +28,15 @@ export const Route = createFileRoute("/")({
 // CONFIGURAÇÃO WHATSAPP — Alterar número e mensagens aqui
 // Formato: 55 + DDD + número (sem espaços/símbolos)
 // =====================================================================
-const WHATSAPP_NUMBER = "5500000000000"; // <-- TROCAR NÚMERO AQUI
+const WHATSAPP_NUMBER = "5527996419119"; // <-- TROCAR NÚMERO AQUI
+const WHATSAPP_DEFAULT_MESSAGE =
+  "Olá, vim do site do Dr. Bruno Sessa e quero marcar uma consulta.";
 const WHATSAPP_MESSAGES = {
-  hero: "Olá Dr. Bruno, gostaria de agendar uma avaliação cardiológica particular.",
-  authority: "Olá Dr. Bruno, gostaria de mais informações sobre o atendimento.",
-  procedures: "Olá Dr. Bruno, tenho interesse em saber sobre os procedimentos minimamente invasivos.",
-  contact: "Olá Dr. Bruno, gostaria de agendar uma consulta no Edifício The Point.",
-  nav: "Olá Dr. Bruno, vim pelo site e gostaria de agendar uma consulta.",
+  hero: WHATSAPP_DEFAULT_MESSAGE,
+  authority: WHATSAPP_DEFAULT_MESSAGE,
+  procedures: WHATSAPP_DEFAULT_MESSAGE,
+  contact: WHATSAPP_DEFAULT_MESSAGE,
+  nav: WHATSAPP_DEFAULT_MESSAGE,
 };
 const wa = (msg: string) =>
   `https://wa.me/${WHATSAPP_NUMBER}?text=${encodeURIComponent(msg)}`;
