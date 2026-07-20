@@ -599,7 +599,7 @@ function Location() {
             <p className="flex items-start gap-3">
               <MapPin className="h-5 w-5 text-navy shrink-0 mt-0.5" strokeWidth={1.5} />
               <span>
-                Cardiologista em Vila Velha — Edifício The Point, Espírito Santo
+                Edifício The Point Offices - Rua Moema, 25 - Sala 1605 - Divino Espírito Santo, Vila Velha - ES
               </span>
             </p>
             <p className="flex items-start gap-3">
