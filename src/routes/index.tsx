@@ -116,17 +116,13 @@ function Hero() {
             <span className="hairline mr-3 align-middle" />
             Cardiologia Intervencionista &amp; Hemodinâmica
           </p>
-          <h1 className="text-4xl sm:text-5xl lg:text-[3.75rem] font-semibold leading-[1.05]">
-            Cardiologia de alta
-            <br />
-            <span className="text-navy">complexidade,</span>
-            <br />
-            conduzida com precisão.
+          <h1 className="text-4xl sm:text-5xl lg:text-[3.4rem] font-semibold leading-[1.05]">
+            Cardiologia Intervencionista com experiência dos maiores centros do país, agora na Grande Vitória.
           </h1>
           <p className="mt-8 max-w-xl text-base sm:text-lg leading-relaxed text-muted-foreground">
-            Da consulta clínica especializada aos procedimentos minimamente invasivos
-            de alta complexidade — quando clinicamente indicados — conduzidos com o
-            rigor técnico dos maiores centros do país.
+            Da consulta especializada ao tratamento minimamente invasivo de doenças
+            coronarianas e valvares (quando indicado), com formação e atuação no
+            InCor-USP e Hospital Sírio-Libanês.
           </p>
           <div className="mt-10 flex flex-col sm:flex-row gap-4">
             <a
