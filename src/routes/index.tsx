@@ -77,6 +77,7 @@ function LandingPage() {
       <FAQ />
       <Location />
       <Footer />
+      <FloatingWhatsApp />
     </div>
   );
 }
